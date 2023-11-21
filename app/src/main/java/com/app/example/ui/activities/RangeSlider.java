@@ -1,41 +1,30 @@
-package com.crystal.crystalrangeseekbar.ui.activities;
+package com.app.example.ui.activities;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-
-
-import com.crystal.crystalrangeseekbar.R;
-import com.crystal.crystalrangeseekbar.adapters.RangeSeekbarPagerAdapter;
-import com.crystal.crystalrangeseekbar.ui.fragments.RangeSeekbar;
-import com.crystal.crystalrangeseekbar.ui.fragments.Seekbar;
-
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import com.app.example.databinding.RangeSliderBinding;
+import com.app.example.ui.fragments.RangeSeekbar;
+import com.app.example.ui.fragments.Seekbar;
+import com.app.example.adapters.RangeSeekbarPagerAdapter;
+import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by owais.ali on 6/19/2016.
- */
+
 public class RangeSlider extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.range_slider);
+        com.app.example.databinding.RangeSliderBinding bind = RangeSliderBinding.inflate(getLayoutInflater());
+        setContentView(bind.getRoot());
 
-        init();
-    }
 
-    public final <T> T getView(int resId){
-        return (T)findViewById(resId);
-    }
-
-    private void init(){
-        final TabLayout tabLayout = getView(R.id.tlSeekbar);
-        final ViewPager viewPager = getView(R.id.vpSeekbar);
+        final TabLayout tabLayout = bind.tlSeekbar;
+        final ViewPager viewPager = bind.vpSeekbar;
 
         // set fragments list
         final List<Fragment> fragments = new ArrayList<>();

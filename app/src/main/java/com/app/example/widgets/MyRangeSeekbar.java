@@ -1,13 +1,13 @@
-package com.crystal.crystalrangeseekbar.widgets;
+package com.app.example.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.util.AttributeSet;
-
-import com.crystal.crystalrangeseekbar.R;
+import com.app.example.R;
+import com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar;
 
 /**
  * Created by owais.ali on 7/12/2016.

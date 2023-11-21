@@ -1,8 +1,7 @@
-package com.crystal.crystalrangeseekbar.ui.fragments;
+package com.app.example.ui.fragments;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.InflateException;
 import android.view.LayoutInflater;
@@ -11,17 +10,16 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.crystal.crystalrangeseekbar.R;
+import androidx.fragment.app.Fragment;
+import com.app.example.R;
 import com.crystal.crystalrangeseekbar.interfaces.OnSeekbarChangeListener;
 import com.crystal.crystalrangeseekbar.interfaces.OnSeekbarFinalValueListener;
 import com.crystal.crystalrangeseekbar.widgets.BubbleThumbSeekbar;
 import com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar;
 import com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar;
-import com.crystal.crystalrangeseekbar.widgets.MySeekbar;
+import com.app.example.widgets.MySeekbar;
 
-/**
- * Created by owais.ali on 7/15/2016.
- */
+
 public class Seekbar extends Fragment {
 
     protected View rootView;
